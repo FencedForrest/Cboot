@@ -57,7 +57,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address     | Operating System |
 |----------|----------|----------------|------------------|
@@ -97,8 +96,6 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
   across deployments. In addition to the preceding features the playbooks can be deployed by junior staff freeing up time for senior staff.
 
 The playbook implements the following tasks:
-
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 
  ** This ELK server was configured on a Standard D2s v3 (2 vcpus, 8 GiB memory) in Azure **
 
@@ -140,25 +137,20 @@ SSH into the control node and follow the steps below:
 
 _TODO: Answer the following questions to fill in the blanks:_
 
-- _Which file is the playbook? Where do you copy it? 
 
    Every file and playbook you need is located in the /etc/ansible directory.
    The ELK playbook is titled elk-playbook.yml, the Ansible playbook is titled my_playbook.yml, the Filebeat playbook is titled filebeat-playbok.yml and 
    the filebeat.yml file is where you can do the configuration of filebeat. The Metricbeat playbook is metricbeat-playbook.yml and the configuration file is metricbeat.yml.
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? 
 
    To point Ansible to a specific machine you must alter the hosts file under the [webservers] line. This is where you will add the new hosts machines IP address.
 
-- How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 
   In the hosts file there is a subsection [elkservers] this is where the IP for the ELK server resides and the [webservers] subsection is where the IPs for the VM servers are.
 
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
    To navigate to the Kibana data display go to the public IP of the ELK server currently configures as 52.170.91.45 at the 5601 port in a browser window. ie http://52.170.91.45:5601
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
 --Useful commands during this Process--
 
