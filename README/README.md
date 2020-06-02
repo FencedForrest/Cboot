@@ -135,8 +135,6 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to the ELK server via ssh to check that the installation worked as expected.
 - After this you can navigate to the public IP of the ELK server at port 5601 and you should see the Kiaba landing page ["ELK Pub IP":5601]
 
-_TODO: Answer the following questions to fill in the blanks:_
-
 
    Every file and playbook you need is located in the /etc/ansible directory.
    The ELK playbook is titled elk-playbook.yml, the Ansible playbook is titled my_playbook.yml, the Filebeat playbook is titled filebeat-playbok.yml and 
